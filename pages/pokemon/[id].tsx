@@ -69,7 +69,7 @@ export default function PokemonPage({ pokemon }: PokemonPageProps) {
                 padding: '8px 16px'
               }}
             >
-              <Text h1 transform='capitalize'>{pokemon.id}</Text>
+              <Text h1 transform='capitalize'>{pokemon.name}</Text>
               <Button
                 color='gradient'
                 ghost
