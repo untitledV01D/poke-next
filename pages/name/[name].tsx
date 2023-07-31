@@ -123,7 +123,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths: pokemons.map(({ name }) => ({
-      params: { name }
+      params: { 
+        name: name.toLocaleLowerCase()
+      }
     })),
     fallback: 'blocking'
   };
